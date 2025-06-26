@@ -34,7 +34,7 @@ contract Lottery {
     function play() external payable minAmount(msg.value) {
         uint256 _counter = counter++;
         player[_counter] = msg.sender;
-        if(_counter == 99){
+        if(_counter == 3){
             //termino.
             emit VRF();
         }
