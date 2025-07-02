@@ -8,6 +8,9 @@ const ETHERSCAN_API_KEY = process.env.ETHSCAN_KEY; // VERIFICAR EL CONTRATO
 
 module.exports = {
   solidity: "0.8.28",
+  gasReporter:{
+    enabled: true,
+  },
   networks: {
     sepolia: {
       url: INFURA_NODO,
